@@ -1,1 +1,273 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v30/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Slabo 27px';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Slabo 27px'), local('Slabo27px-Regular'), url(https://fonts.gstatic.com/s/slabo27px/v6/mFT0WbgBwKPR_Z4hGN2qgx8D0A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Caveat Regular'), local('Caveat-Regular'), url(https://fonts.gstatic.com/s/caveat/v7/Wnz6HAc5bAfYB2Q7ZjYd.ttf) format('truetype');
+}
+html,
+body {
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header {
+  display: inline;
+  text-align: right;
+}
+header nav a {
+  color: goldenrod;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #8A2BE2;
+}
+.Container {
+  font-size: 1.1rem;
+  font-family: oswald;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 10%;
+  max-width: 80%;
+  height: 30%;
+}
+.Container h1 {
+  font-size: 2rem;
+}
+.Container h2 {
+  text-decoration: underline wavy goldenrod;
+}
+.Container .Container1 {
+  text-align: center;
+  padding: 5%;
+  color: #8A2BE2;
+}
+.Container .Container1:hover h1 {
+  color: goldenrod;
+  text-transform: uppercase;
+  font-family: Caveat;
+  font-size: 1.5rem;
+}
+.Container .Container1:hover h2 {
+  color: goldenrod;
+  text-transform: uppercase;
+  font-family: Slabo;
+  font-size: 1.5rem;
+  text-decoration: underline wavy #8A2BE2;
+}
+.Container .Container2 {
+  text-align: left;
+  padding: 5%;
+  color: #8A2BE2;
+}
+.Container .Container2:hover h1 {
+  color: goldenrod;
+  text-transform: uppercase;
+  font-family: Caveat;
+  font-size: 1.5rem;
+}
+.Container .Container2:hover h2 {
+  color: goldenrod;
+  text-transform: uppercase;
+  font-family: Slabo;
+  font-size: 1.5rem;
+  text-decoration: underline wavy #8A2BE2;
+}
+.Container .Container3 {
+  text-align: right;
+  padding: 5%;
+  color: #8A2BE2;
+}
+.Container .Container3:hover h1 {
+  color: goldenrod;
+  text-transform: uppercase;
+  font-family: Caveat;
+  font-size: 1.5rem;
+}
+.Container .Container3:hover h2 {
+  color: goldenrod;
+  text-transform: uppercase;
+  font-family: Slabo;
+  font-size: 1.5rem;
+  text-decoration: underline wavy #8A2BE2;
+}
+footer {
+  justify-content: space-around;
+  height: 30%;
+  line-height: 2;
+}
+footer a {
+  color: goldenrod;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #8A2BE2;
+}
+footer h2 {
+  font-size: 1.5rem;
+  color: #8A2BE2;
+}
+footer h2:hover h1 {
+  color: goldenrod;
+  text-transform: uppercase;
+  font-family: Caveat;
+  font-size: 1.5rem;
+}
+footer h2:hover h2 {
+  color: goldenrod;
+  text-transform: uppercase;
+  font-family: Slabo;
+  font-size: 1.5rem;
+  text-decoration: underline wavy #8A2BE2;
+}
