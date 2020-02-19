@@ -177,10 +177,13 @@ header nav a:hover {
   line-height: 1.5;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 10%;
   max-width: 80%;
-  height: 30%;
+  max-height: 30%;
+}
+.Container h1 {
+  font-family: Caveat;
 }
 .Container h1 {
   font-size: 2rem;
@@ -190,6 +193,7 @@ header nav a:hover {
 }
 .Container .Container1 {
   text-align: center;
+  max-height: 30%;
   padding: 5%;
   color: #8A2BE2;
 }
@@ -208,8 +212,14 @@ header nav a:hover {
 }
 .Container .Container2 {
   text-align: left;
+  max-height: 30%;
   padding: 5%;
   color: #8A2BE2;
+}
+@media screen and (max-width: 500px) {
+  .Container .Container2 {
+    text-align: center;
+  }
 }
 .Container .Container2:hover h1 {
   color: goldenrod;
@@ -226,8 +236,14 @@ header nav a:hover {
 }
 .Container .Container3 {
   text-align: right;
+  max-height: 30%;
   padding: 5%;
   color: #8A2BE2;
+}
+@media screen and (max-width: 500px) {
+  .Container .Container3 {
+    text-align: center;
+  }
 }
 .Container .Container3:hover h1 {
   color: goldenrod;
@@ -270,4 +286,9 @@ footer h2:hover h2 {
   font-family: Slabo;
   font-size: 1.5rem;
   text-decoration: underline wavy #8A2BE2;
+}
+@media screen and (max-width: 500px) {
+  footer {
+    text-align: center;
+  }
 }

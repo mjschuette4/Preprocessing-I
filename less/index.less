@@ -69,6 +69,9 @@ table {
 	border: 1px solid black;
 }
 .fontDesign(){
+	h1{
+		font-family: Caveat;
+	}
 	font-size: 1.1rem;
 	font-family: oswald;
 	line-height: 1.5;
@@ -99,6 +102,7 @@ table {
 }
 .pDesign2(){
 	color: @mainColor2;
+	
 }
 //Mixins end
 
@@ -123,10 +127,10 @@ header {
 	.fontDesign();
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: 0 10%;
 	max-width: 80%;
-	height: 30%;
+	max-height: 30%;
 	h1{
 		font-size: 2rem;
 	}
@@ -135,6 +139,7 @@ header {
 	}
 	.Container1{
 		text-align: center;
+		max-height: 30%;
 		padding: 5%;
 		.pDesign2();
 	}
@@ -143,16 +148,24 @@ header {
 	}
 	.Container2{
 		text-align: left;
+		max-height: 30%;
 		padding: 5%;
 		.pDesign2();
+		@media screen and (max-width:500px){
+			text-align: center;
+		}
 	}
 	.Container2:hover{
 		.containerHover();
 	}
 	.Container3{
 		text-align: right;
+		max-height: 30%;
 		padding: 5%;
 		.pDesign2();
+		@media screen and (max-width:500px){
+			text-align: center;
+		}
 	}
 	.Container3:hover{
 		.containerHover();
@@ -171,6 +184,7 @@ footer{
 	justify-content: space-around;
 	height: 30%;
 	line-height: 2;
+	@media screen and (max-width:500px){
+		text-align: center;
+	}
 }
-
-
